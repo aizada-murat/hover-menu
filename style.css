@@ -1,6 +1,7 @@
-section{
+.dropdown{
+    margin: 200px;
     position: relative;
-
+    width: 30%;
 }
 
 button{
@@ -10,23 +11,25 @@ button{
     padding: 15px;
 }
 
-
-
-.dropdown a{
+.dropdown-link a{
     text-decoration: none;
     color: black;
     padding: 10px 15px;
     display: block;
 }
 
-.dropdown a:hover{
+.dropdown-link a:hover{
     background-color:  rgb(154, 151, 151);
 }
 
-.dropdown{
+.dropdown:hover .dropdown-link{
+    display: block;
+}
+
+.dropdown-link{
     background-color: rgb(206, 202, 202);
     width: 150px;
     box-shadow: 1px 1px 5px;
-    /* display: none; */
+    display: none;
 }
 
